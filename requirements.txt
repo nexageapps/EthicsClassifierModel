@@ -1,0 +1,23 @@
+# EthicsBERT – Python dependencies
+# Pin to tested versions; adjust as needed for your environment.
+
+# Core ML
+torch==2.3.0
+transformers==4.41.0
+datasets==2.19.0
+tokenizers==0.19.1
+accelerate==0.30.0
+
+# Data & evaluation
+pandas==2.2.2
+scikit-learn==1.4.2
+numpy==1.26.4
+
+# Hugging Face Hub (deploy.py)
+huggingface_hub==0.23.0
+
+# Gradio demo (app.py)
+gradio==4.31.0
+
+# Optional: experiment tracking
+# tensorboard==2.17.0

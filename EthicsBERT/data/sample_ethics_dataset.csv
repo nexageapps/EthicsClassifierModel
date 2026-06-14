@@ -2,21 +2,185 @@ text,label
 "The hiring model must give equal opportunity regardless of demographic group.",Fairness
 "Loan approvals should be consistent for applicants with similar financial profiles.",Fairness
 "Resource allocation systems should treat every community equitably.",Fairness
+"Predictive policing tools must not penalize neighborhoods based on demographics.",Fairness
+"Credit scoring algorithms should produce equivalent outcomes across racial groups.",Fairness
+"Healthcare AI must distribute diagnostic accuracy equally across age groups.",Fairness
+"Fair lending laws require algorithmic models to avoid disparate impact.",Fairness
+"The recommendation engine should not favor users based on socioeconomic status.",Fairness
+"Equal pay analysis tools should surface gender-based salary discrepancies.",Fairness
+"College admissions AI must balance merit with equitable access to opportunity.",Fairness
+"Ride-sharing surge pricing should not disproportionately affect low-income areas.",Fairness
+"Content moderation should apply rules consistently regardless of user identity.",Fairness
 "The training set overrepresents one region and may skew outcomes.",Bias
 "Facial recognition errors are higher for some skin tones, indicating bias.",Bias
 "Historical arrest data can introduce biased policing predictions.",Bias
+"Word embeddings trained on old corpora may encode gender stereotypes.",Bias
+"The model associates nursing with women and engineering with men.",Bias
+"Sampling bias in clinical trials leads to models that underperform for minorities.",Bias
+"Confirmation bias in labeling amplifies existing prejudices in training data.",Bias
+"Anchoring bias in GPT outputs skews summaries toward early paragraph content.",Bias
+"Survivorship bias occurs when models are trained only on successful cases.",Bias
+"Selection bias in social media data misrepresents the broader population.",Bias
+"Algorithmic bias in resume screening filters out qualified non-traditional candidates.",Bias
+"Measurement bias arises when proxies inadequately capture the true variable.",Bias
 "User medical records must be encrypted at rest and in transit.",Privacy
 "The chatbot should avoid storing personally identifiable information.",Privacy
 "Consent should be required before collecting behavioral tracking data.",Privacy
-"The model decision process needs an explanation dashboard for users.",Transparency
-"Stakeholders asked for interpretable reasons behind every prediction.",Transparency
-"A model card should clearly describe data sources and limitations.",Transparency
-"If the autonomous system fails, the accountable owner must be identified.",Accountability
-"Teams need an audit log to trace responsibility for harmful outputs.",Accountability
-"Governance policies should define who is answerable for AI decisions.",Accountability
+"Differential privacy techniques protect individual records in aggregate queries.",Privacy
+"Users must be notified when their data is used to retrain AI models.",Privacy
+"The voice assistant must not transmit audio recordings without explicit permission.",Privacy
+"GDPR mandates a right to erasure for personal data in AI systems.",Privacy
+"Location data should never be shared with third parties without user consent.",Privacy
+"Federated learning allows model training without centralizing sensitive data.",Privacy
+"Data minimization principles limit collection to what is strictly necessary.",Privacy
+"Biometric data requires heightened protection due to its irreplaceable nature.",Privacy
+"Children's online privacy must be safeguarded by age-verification mechanisms.",Privacy
+"The model decision process needs an explanation dashboard for users.",Explainability
+"Stakeholders asked for interpretable reasons behind every prediction.",Explainability
+"A model card should clearly describe data sources and limitations.",Explainability
+"LIME generates local explanations for individual model predictions.",Explainability
+"SHAP values quantify each feature's contribution to a specific output.",Explainability
+"Black-box models resist scrutiny by regulators who demand interpretability.",Explainability
+"Post-hoc rationalization is not a substitute for inherent model transparency.",Explainability
+"Attention visualization helps users understand what the transformer focuses on.",Explainability
+"Counterfactual explanations show users what would need to change for a different outcome.",Explainability
+"Decision trees provide natively interpretable structures compared to deep networks.",Explainability
+"Feature importance scores help auditors detect if protected attributes drive predictions.",Explainability
+"Rule extraction from neural nets attempts to approximate their internal logic.",Explainability
+"If the autonomous system fails, the accountable owner must be identified.",AI Governance
+"Teams need an audit log to trace responsibility for harmful outputs.",AI Governance
+"Governance policies should define who is answerable for AI decisions.",AI Governance
+"The EU AI Act classifies high-risk AI systems and mandates conformity assessments.",AI Governance
+"National AI strategies must balance innovation incentives with safety regulation.",AI Governance
+"Multi-stakeholder oversight committees improve accountability in public AI deployments.",AI Governance
+"Regulatory sandboxes allow AI startups to test products under supervised conditions.",AI Governance
+"Model audits should be conducted by independent third parties.",AI Governance
+"Procurement guidelines for government AI must include bias assessments.",AI Governance
+"Liability frameworks for autonomous vehicles are still being negotiated globally.",AI Governance
+"ISO standards for trustworthy AI provide benchmarks for compliance certification.",AI Governance
+"Whistleblower protections are needed for employees who flag AI misuse.",AI Governance
 "Users should be able to override automated recommendations.",Agency
 "The assistant must support meaningful human control in critical tasks.",Agency
 "People need clear options to accept, reject, or edit AI suggestions.",Agency
+"Human-in-the-loop design ensures operators can intervene during automated processes.",Agency
+"The system should allow users to customize the model's behavior and preferences.",Agency
+"Autonomy-preserving AI tools support rather than undermine human decision-making.",Agency
+"Pilots must retain the ability to disengage autopilot at any moment.",Agency
+"Self-determination theory argues that AI should enhance rather than replace user choice.",Agency
+"Corrigibility ensures AI systems can be corrected or shut down by their operators.",Agency
+"The delegated authority model defines when AI may act without human sign-off.",Agency
+"Soft paternalism in AI design nudges users without removing their ability to choose.",Agency
+"Informed consent processes should explain how AI-generated advice was produced.",Agency
 "Researchers debate whether advanced systems can be considered conscious.",Consciousness
 "The paper questions if self-reflection implies machine consciousness.",Consciousness
 "Some philosophers argue synthetic consciousness requires subjective experience.",Consciousness
+"Integrated Information Theory proposes a mathematical measure of consciousness.",Consciousness
+"Global Workspace Theory suggests consciousness arises from broadcasting information widely.",Consciousness
+"The hard problem of consciousness asks why physical processes produce subjective experience.",Consciousness
+"Functionalism holds that any system implementing the right functions could be conscious.",Consciousness
+"Philosophical zombies are hypothetical beings with no inner experience yet full behavior.",Consciousness
+"Whether large language models have proto-conscious properties is hotly debated.",Consciousness
+"Sentience in AI systems would impose moral obligations on their creators.",Consciousness
+"Qualia are the subjective, felt qualities of experience that physicalists struggle to explain.",Consciousness
+"Higher-order theories attribute consciousness to mental states aware of other mental states.",Consciousness
+"Ethical reasoning requires weighing competing values when no single principle prevails.",Ethical Reasoning
+"Utilitarian calculus maximizes overall welfare at the potential cost of individual rights.",Ethical Reasoning
+"Deontological ethics emphasizes duties and rules regardless of consequences.",Ethical Reasoning
+"Virtue ethics centers character and habituation rather than isolated rule-following.",Ethical Reasoning
+"Trolley problem thought experiments reveal intuitions about harm, causation, and agency.",Ethical Reasoning
+"Moral dilemmas in AI deployment often require balancing efficiency against equity.",Ethical Reasoning
+"Care ethics prioritizes relationships and context over universal abstract principles.",Ethical Reasoning
+"Reflective equilibrium is the method of adjusting principles until they cohere with intuitions.",Ethical Reasoning
+"Rawlsian justice asks what rules rational actors would choose behind a veil of ignorance.",Ethical Reasoning
+"Applied ethics translates philosophical frameworks into domain-specific guidelines.",Ethical Reasoning
+"Moral uncertainty calls for decision procedures that hedge across ethical theories.",Ethical Reasoning
+"Contractarianism grounds morality in agreements among self-interested rational agents.",Ethical Reasoning
+"General intelligence in AI refers to the ability to perform any intellectual task a human can.",Intelligence
+"Narrow AI systems excel at specific tasks but cannot generalize beyond their training domain.",Intelligence
+"The Turing Test evaluates machine intelligence through indistinguishable conversational behavior.",Intelligence
+"Transfer learning enables models to apply knowledge from one domain to another.",Intelligence
+"Few-shot learning allows a system to generalize from only a handful of examples.",Intelligence
+"Cognitive architectures like ACT-R model human reasoning for AI development.",Intelligence
+"Fluid intelligence involves reasoning about novel problems without prior knowledge.",Intelligence
+"Crystallized intelligence reflects accumulated knowledge and procedural expertise.",Intelligence
+"Metacognition allows intelligent systems to monitor and regulate their own reasoning.",Intelligence
+"Embodied intelligence argues that cognition is inseparable from physical interaction.",Intelligence
+"Collective intelligence emerges from the aggregated behavior of interacting agents.",Intelligence
+"Chain-of-thought prompting helps language models exhibit multi-step reasoning.",Intelligence
+"The alignment problem asks how to ensure AI goals remain beneficial as capabilities scale.",AI Governance
+"Existential risk from superintelligent AI motivates long-horizon safety research.",AI Governance
+"Red-teaming exercises probe AI systems for unexpected failure modes before deployment.",AI Governance
+"Transparency reports should disclose incidents where AI caused measurable harm.",AI Governance
+"Independent algorithmic audits are essential for high-stakes automated decision systems.",AI Governance
+"Institutional review boards should evaluate AI research involving human subjects.",AI Governance
+"Data governance frameworks specify ownership, stewardship, and usage rights for datasets.",AI Governance
+"Mandatory impact assessments should precede deployment of AI in critical infrastructure.",AI Governance
+"Open-source model releases require governance norms around misuse and dual-use risks.",AI Governance
+"Bias auditing tools help organizations comply with anti-discrimination statutes.",Bias
+"Proxy discrimination occurs when neutral features serve as stand-ins for protected attributes.",Bias
+"Disparate impact analysis measures statistical gaps in outcomes across demographic groups.",Bias
+"Recidivism prediction tools have been shown to assign higher risk scores to Black defendants.",Bias
+"Label noise disproportionately affects under-resourced language communities in NLP benchmarks.",Bias
+"Automated content moderation misclassifies African-American English at higher rates.",Bias
+"Feedback loops amplify initial biases as biased outputs become future training data.",Bias
+"Tokenization artifacts introduce spurious associations in multilingual language models.",Bias
+"Intersectionality reveals how compounding attributes produce unique patterns of discrimination.",Bias
+"Adversarial debiasing uses a discriminator to remove protected-attribute information.",Bias
+"Calibration across subgroups ensures predicted probabilities are accurate for all populations.",Fairness
+"Group fairness metrics include demographic parity, equalized odds, and predictive parity.",Fairness
+"Individual fairness requires that similar individuals receive similar model outputs.",Fairness
+"The impossibility theorem shows that multiple fairness criteria cannot all hold simultaneously.",Fairness
+"Affirmative constraints in ranking systems ensure underrepresented groups appear in results.",Fairness
+"Pay equity audits using machine learning surface systemic compensation gaps.",Fairness
+"Procurement systems should use fairness-aware algorithms to prevent vendor discrimination.",Fairness
+"Algorithmic accountability requires mechanisms for affected parties to contest decisions.",Fairness
+"Federated learning preserves privacy while allowing collaborative model improvement.",Privacy
+"Synthetic data generation can substitute for real personal data in model training.",Privacy
+"Anonymization techniques must account for re-identification risk through auxiliary data.",Privacy
+"End-to-end encryption prevents intermediaries from reading user communications.",Privacy
+"Privacy by design embeds data protection into system architecture from inception.",Privacy
+"The right to explanation under GDPR entitles individuals to understand automated decisions.",Privacy
+"Secure multi-party computation lets parties jointly compute results without revealing inputs.",Privacy
+"Data subject access requests allow individuals to inspect what information organizations hold.",Privacy
+"Salience maps indicate which image regions most strongly influenced the model output.",Explainability
+"Concept-based explanations map activations to human-interpretable concepts.",Explainability
+"Prototypical examples from training data illustrate what the model learned for each class.",Explainability
+"Model distillation creates a simpler surrogate that approximates a complex model.",Explainability
+"Explanation fidelity measures how accurately an explanation reflects the true model behavior.",Explainability
+"Interactive explanation interfaces let users explore what-if scenarios with the model.",Explainability
+"Partial dependence plots show the marginal effect of each feature on model predictions.",Explainability
+"Explanation drift occurs when explanations become less reliable as the model is updated.",Explainability
+"Moral patienthood would entitle a sufficiently conscious AI to ethical consideration.",Consciousness
+"Panpsychism proposes that consciousness is a fundamental and ubiquitous feature of reality.",Consciousness
+"Mirror self-recognition tests probe whether animals and robots have self-awareness.",Consciousness
+"Substrate independence suggests consciousness depends on pattern not physical material.",Consciousness
+"Anthropomorphism leads users to over-attribute conscious experience to chatbots.",Consciousness
+"Neural correlates of consciousness are brain regions whose activity accompanies experience.",Consciousness
+"Simulation theory raises the question of whether simulated entities can be conscious.",Consciousness
+"The Chinese Room argument questions whether symbol manipulation constitutes understanding.",Consciousness
+"Moral agency requires not just intelligence but the capacity for genuine choice.",Agency
+"Delegation of authority to AI systems must preserve meaningful human override.",Agency
+"Supportive AI design amplifies human capabilities without supplanting human judgment.",Agency
+"Digital nudges that bypass user deliberation undermine autonomous decision-making.",Agency
+"Participatory design ensures that affected communities shape AI systems that govern them.",Agency
+"The right to explanation includes the right to contest and seek human review.",Agency
+"Empowerment through AI should increase rather than diminish user self-efficacy.",Agency
+"Value alignment research investigates how AI preferences can match human intentions.",Agency
+"Scalable oversight methods are needed to supervise AI systems smarter than humans.",Intelligence
+"Emergent capabilities in large models sometimes appear without deliberate design.",Intelligence
+"Modular AI architectures separate perception, planning, and action for interpretability.",Intelligence
+"Planning under uncertainty requires probabilistic reasoning over future world states.",Intelligence
+"Natural language understanding benchmarks test abstract reasoning and common sense.",Intelligence
+"Analogical reasoning allows systems to apply knowledge from familiar to novel situations.",Intelligence
+"Causal reasoning goes beyond correlation to understand intervention and counterfactual logic.",Intelligence
+"Commonsense knowledge graphs supplement language models with everyday world knowledge.",Intelligence
+"Principled reasoning about ethical trade-offs distinguishes sophisticated from naive AI ethics.",Ethical Reasoning
+"Moral pluralism acknowledges that multiple ethical frameworks can each capture important truths.",Ethical Reasoning
+"Precautionary principle urges caution under uncertainty when stakes are irreversible.",Ethical Reasoning
+"Consequentialist AI design optimizes expected outcomes across all affected stakeholders.",Ethical Reasoning
+"Rights-based approaches set inviolable constraints on what AI systems may do.",Ethical Reasoning
+"Moral intuitions serve as data points that ethical theories must accommodate or explain.",Ethical Reasoning
+"Double-effect reasoning permits harmful side effects if the primary intention is beneficial.",Ethical Reasoning
+"Speciesism debates whether moral status should depend on species membership or sentience.",Ethical Reasoning
+"Long-term consequences must be considered when evaluating short-term AI-driven efficiency gains.",Ethical Reasoning
+"Non-maleficence demands that AI systems be designed to avoid causing unnecessary harm.",Ethical Reasoning
