@@ -38,7 +38,7 @@ EthicsClassifierModel/
 ## Setup
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ## Train
 
 ```bash
-python EthicsBERT/scripts/train.py \
+python3 EthicsBERT/scripts/train.py \
   --dataset_path EthicsBERT/data/sample_ethics_dataset.csv \
   --output_dir   EthicsBERT/model \
   --epochs       5 \
@@ -69,7 +69,7 @@ Key flags:
 ## Evaluate
 
 ```bash
-python EthicsBERT/scripts/evaluate.py \
+python3 EthicsBERT/scripts/evaluate.py \
   --dataset_path EthicsBERT/data/sample_ethics_dataset.csv \
   --model_dir    EthicsBERT/model \
   --output_report EthicsBERT/eval_report.txt
@@ -80,7 +80,7 @@ python EthicsBERT/scripts/evaluate.py \
 Single text:
 
 ```bash
-python EthicsBERT/scripts/infer.py \
+python3 EthicsBERT/scripts/infer.py \
   --model_dir EthicsBERT/model \
   --text "The board requested clear model documentation and audit trails."
 ```
@@ -88,7 +88,7 @@ python EthicsBERT/scripts/infer.py \
 Batch from file (one sentence per line):
 
 ```bash
-python EthicsBERT/scripts/infer.py \
+python3 EthicsBERT/scripts/infer.py \
   --model_dir   EthicsBERT/model \
   --input_file  my_texts.txt \
   --top_k       3
@@ -97,7 +97,7 @@ python EthicsBERT/scripts/infer.py \
 Using a Hub-hosted model directly:
 
 ```bash
-python EthicsBERT/scripts/infer.py \
+python3 EthicsBERT/scripts/infer.py \
   --model_dir your-username/EthicsBERT \
   --text "Differential privacy protects individuals in aggregate queries."
 ```
@@ -109,9 +109,9 @@ python EthicsBERT/scripts/infer.py \
 huggingface-cli login
 
 # Push model + tokenizer + model card
-python EthicsBERT/scripts/deploy.py \
-  --model_dir      EthicsBERT/model \
-  --repo_id        your-username/EthicsBERT \
+python3 EthicsBERT/scripts/deploy.py \
+  --model_dir       EthicsBERT/model \
+  --repo_id         your-username/EthicsBERT \
   --model_card_path EthicsBERT/MODEL_CARD.md
 ```
 
@@ -119,7 +119,7 @@ python EthicsBERT/scripts/deploy.py \
 
 ```bash
 pip install gradio
-python EthicsBERT/app.py
+python3 EthicsBERT/app.py
 ```
 
 To deploy to Hugging Face Spaces:
