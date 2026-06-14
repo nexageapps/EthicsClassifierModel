@@ -99,7 +99,7 @@ examples = [
 with gr.Blocks(title="EthicsBERT – AI Ethics Classifier", theme=gr.themes.Soft()) as demo:
     gr.Markdown(
         """
-        #EthicsBERT
+        # EthicsBERT
         ### AI Ethics Topic Classifier
         Fine-tuned **DistilBERT** that categorises text about AI ethics into one of
         9 topic areas: *Agency, AI Governance, Bias, Consciousness, Ethical Reasoning,
@@ -135,7 +135,7 @@ with gr.Blocks(title="EthicsBERT – AI Ethics Classifier", theme=gr.themes.Soft
     gr.Markdown(
         """
         ---
-        Model: [EthicsBERT](https://huggingface.co/your-username/EthicsBERT) |
+        Model: [EthicsBERT](https://huggingface.co/nexageapps/EthicsBERT) |
         Base: `distilbert-base-uncased` |
         Labels: Agency · AI Governance · Bias · Consciousness ·
         Ethical Reasoning · Explainability · Fairness · Intelligence · Privacy

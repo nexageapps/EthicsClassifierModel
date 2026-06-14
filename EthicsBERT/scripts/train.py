@@ -16,7 +16,6 @@ import pandas as pd
 from datasets import Dataset
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
 from transformers import (
     DistilBertForSequenceClassification,
     DistilBertTokenizerFast,
@@ -132,7 +131,7 @@ def main():
         df[["text", "labels"]],
         test_size=args.test_size,
         random_state=args.seed,
-        stratify=df["label"],
+        stratify=df["labels"],
         shuffle=True,
     )
     train_dataset = Dataset.from_pandas(train_df.reset_index(drop=True))
@@ -174,8 +173,9 @@ def main():
         learning_rate=args.learning_rate,
         weight_decay=args.weight_decay,
         warmup_ratio=args.warmup_ratio,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
+        save_total_limit=1,          # keep only the single best checkpoint
         load_best_model_at_end=True,
         metric_for_best_model="f1",
         greater_is_better=True,
@@ -209,6 +209,12 @@ def main():
 
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
+
+    # Remove any leftover checkpoint subdirectories — only the final model files are needed
+    import shutil
+    for entry in os.listdir(args.output_dir):
+        if entry.startswith("checkpoint-"):
+            shutil.rmtree(os.path.join(args.output_dir, entry))
 
     mapping_path = os.path.join(args.output_dir, "label_mapping.json")
     with open(mapping_path, "w", encoding="utf-8") as f:

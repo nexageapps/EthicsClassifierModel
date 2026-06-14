@@ -103,8 +103,9 @@ def main():
         output_dir=os.path.join(args.model_dir, "eval_tmp"),
         report_to="none",
         per_device_eval_batch_size=16,
+        do_train=False,
     )
-    trainer = Trainer(model=model, args=eval_args, tokenizer=tokenizer)
+    trainer = Trainer(model=model, args=eval_args)
 
     preds = trainer.predict(dataset)
     y_true = preds.label_ids

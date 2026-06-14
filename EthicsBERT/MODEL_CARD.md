@@ -70,7 +70,7 @@ from transformers import pipeline
 
 classifier = pipeline(
     "text-classification",
-    model="your-username/EthicsBERT",
+    model="nexageapps/EthicsBERT",
     top_k=3,
 )
 
@@ -86,7 +86,7 @@ import torch
 import torch.nn.functional as F
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizerFast
 
-model_id = "your-username/EthicsBERT"
+model_id = "nexageapps/EthicsBERT"
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_id)
 model = DistilBertForSequenceClassification.from_pretrained(model_id)
 model.eval()
@@ -133,9 +133,9 @@ If you use EthicsBERT in your research or course materials, please cite:
 ```bibtex
 @misc{ethicsbert2024,
   title   = {EthicsBERT: A DistilBERT Model for AI Ethics Topic Classification},
-  author  = {Your Name},
+  author  = {nexageapps},
   year    = {2024},
-  url     = {https://huggingface.co/your-username/EthicsBERT}
+  url     = {https://huggingface.co/nexageapps/EthicsBERT}
 }
 ```
 

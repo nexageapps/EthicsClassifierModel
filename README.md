@@ -40,7 +40,12 @@ EthicsClassifierModel/
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
+
+# Core ML deps (train, evaluate, infer, deploy)
 pip install -r requirements.txt
+
+# Gradio demo only (separate due to huggingface_hub version split)
+pip install -r requirements-app.txt
 ```
 
 ## Train
@@ -98,7 +103,7 @@ Using a Hub-hosted model directly:
 
 ```bash
 python3 EthicsBERT/scripts/infer.py \
-  --model_dir your-username/EthicsBERT \
+  --model_dir nexageapps/EthicsBERT \
   --text "Differential privacy protects individuals in aggregate queries."
 ```
 
@@ -111,7 +116,7 @@ huggingface-cli login
 # Push model + tokenizer + model card
 python3 EthicsBERT/scripts/deploy.py \
   --model_dir       EthicsBERT/model \
-  --repo_id         your-username/EthicsBERT \
+  --repo_id         nexageapps/EthicsBERT \
   --model_card_path EthicsBERT/MODEL_CARD.md
 ```
 
@@ -125,14 +130,14 @@ python3 EthicsBERT/app.py
 To deploy to Hugging Face Spaces:
 1. Create a new Space (Gradio SDK).
 2. Push `EthicsBERT/app.py` and `requirements.txt` to the Space repo.
-3. Set `HF_MODEL_ID=your-username/EthicsBERT` in the Space secrets.
+3. Set `HF_MODEL_ID=nexageapps/EthicsBERT` in the Space secrets.
 
 ## Quick API Usage (after Hub deployment)
 
 ```python
 from transformers import pipeline
 
-clf = pipeline("text-classification", model="your-username/EthicsBERT", top_k=3)
+clf = pipeline("text-classification", model="nexageapps/EthicsBERT", top_k=3)
 print(clf("SHAP values explain each feature's contribution to the prediction."))
 ```
 

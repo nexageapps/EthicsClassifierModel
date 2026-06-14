@@ -9,7 +9,7 @@ Prerequisites:
 Usage:
     python EthicsBERT/scripts/deploy.py \
         --model_dir EthicsBERT/model \
-        --repo_id your-username/EthicsBERT \
+        --repo_id nexageapps/EthicsBERT \
         --model_card_path EthicsBERT/MODEL_CARD.md
 
 Optional flags:

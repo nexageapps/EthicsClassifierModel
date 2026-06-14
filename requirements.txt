@@ -1,23 +1,21 @@
-# EthicsBERT – Python dependencies
-# Pin to tested versions; adjust as needed for your environment.
+# EthicsBERT – Core ML dependencies
+# For: train.py, evaluate.py, infer.py, deploy.py
+# Verified compatible with Python 3.12 on macOS (Apple Silicon / Intel)
+#
+# Install with:
+#   pip install -r requirements.txt
 
 # Core ML
-torch==2.3.0
-transformers==4.41.0
-datasets==2.19.0
-tokenizers==0.19.1
-accelerate==0.30.0
+torch==2.2.2
+transformers==4.57.6
+datasets==5.0.0
+tokenizers==0.22.2
+accelerate==1.14.0
 
 # Data & evaluation
-pandas==2.2.2
-scikit-learn==1.4.2
+pandas==2.2.3
+scikit-learn==1.9.0
 numpy==1.26.4
 
-# Hugging Face Hub (deploy.py)
-huggingface_hub==0.23.0
-
-# Gradio demo (app.py)
-gradio==4.31.0
-
-# Optional: experiment tracking
-# tensorboard==2.17.0
+# Hugging Face Hub (deploy.py) — pinned <1.0 per transformers 4.57.6 constraint
+huggingface_hub==0.36.2
