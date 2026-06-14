@@ -1,0 +1,22 @@
+text,label
+"The hiring model must give equal opportunity regardless of demographic group.",Fairness
+"Loan approvals should be consistent for applicants with similar financial profiles.",Fairness
+"Resource allocation systems should treat every community equitably.",Fairness
+"The training set overrepresents one region and may skew outcomes.",Bias
+"Facial recognition errors are higher for some skin tones, indicating bias.",Bias
+"Historical arrest data can introduce biased policing predictions.",Bias
+"User medical records must be encrypted at rest and in transit.",Privacy
+"The chatbot should avoid storing personally identifiable information.",Privacy
+"Consent should be required before collecting behavioral tracking data.",Privacy
+"The model decision process needs an explanation dashboard for users.",Transparency
+"Stakeholders asked for interpretable reasons behind every prediction.",Transparency
+"A model card should clearly describe data sources and limitations.",Transparency
+"If the autonomous system fails, the accountable owner must be identified.",Accountability
+"Teams need an audit log to trace responsibility for harmful outputs.",Accountability
+"Governance policies should define who is answerable for AI decisions.",Accountability
+"Users should be able to override automated recommendations.",Agency
+"The assistant must support meaningful human control in critical tasks.",Agency
+"People need clear options to accept, reject, or edit AI suggestions.",Agency
+"Researchers debate whether advanced systems can be considered conscious.",Consciousness
+"The paper questions if self-reflection implies machine consciousness.",Consciousness
+"Some philosophers argue synthetic consciousness requires subjective experience.",Consciousness
