@@ -23,8 +23,10 @@ model-index:
         metrics:
           - type: accuracy
             name: Accuracy
+            value: 0.7838
           - type: f1
             name: F1 (weighted)
+            value: 0.7810
 ---
 
 # EthicsBERT
