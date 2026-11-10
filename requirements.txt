@@ -6,15 +6,15 @@
 #   pip install -r requirements.txt
 
 # Core ML
-torch==2.2.2
+torch==2.15.0
 transformers==4.57.6
-datasets==5.0.0
-tokenizers==0.22.2
-accelerate==1.14.0
+datasets==5.1.0
+tokenizers==0.23.3
+accelerate==1.15.0
 
 # Data & evaluation
 pandas==2.2.3
-scikit-learn==1.9.0
+scikit-learn==1.9.1
 numpy==1.26.4
 
 # Hugging Face Hub (deploy.py) — pinned <1.0 per transformers 4.57.6 constraint
